@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 
+#Using list
 ''''
 carLoans = [[1, 34689.96, 687.23, 202.93, 484.3, 34205.66, 60, 0.0702,'Toyota Sienna'],
            [2, 34205.66, 687.23, 200.1, 487.13, 33718.53, 60, 0.0702,'Toyota Sienna'],
@@ -16,6 +17,7 @@ carLoans = [[1, 34689.96, 687.23, 202.93, 484.3, 34205.66, 60, 0.0702,'Toyota Si
            [4, 33228.55, 687.23, 194.38, 492.85, 32735.7, 60, 0.0702,'Toyota Sienna'],
            [5, 32735.7, 687.23, 191.5, 495.73, 32239.97, 60, 0.0702,'Toyota Sienna']])'''
 
+#Using dictionaries.
 carLoans = {'Month': {0: 1, 1: 2, 2: 3, 3: 4, 4: 5},
              'Starting Balance': {0: 34689.96,1: 34205.66,2: 33718.53,3: 33228.55,4: 32735.7},
              'Repayment': {0: 687.23, 1: 687.23, 2: 687.23, 3: 687.23, 4: 687.23},
@@ -39,5 +41,6 @@ colNames = ['Month',
 df = pd.DataFrame(data=carLoans, columns=colNames)
 
 print(df)
+#this is the end
 
 #help(pd.DataFrame) #request help for commands
